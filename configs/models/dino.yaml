@@ -1,0 +1,12 @@
+version: 1
+name: dino
+adapter: dino
+model_id: facebook/dino-vitb16
+revision: f205d5d8e640a89a2b8ef0369670dfc37cc07fc2
+expected_dimension: 768
+batch_size: 16
+dtype: float32
+preprocessing: model_native
+embedding_output: cls_token
+gated: false
+trust_remote_code: false

@@ -1,0 +1,57 @@
+# macOS and editors
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Environments and local settings
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Licensed or local-only data
+data/raw/**
+!data/raw/.gitkeep
+data/external/**
+!data/external/.gitkeep
+data/interim/**
+!data/interim/.gitkeep
+data/manifests/**
+!data/manifests/.gitkeep
+
+# Generated research artifacts
+artifacts/**
+!artifacts/.gitkeep
+*.faiss
+*.npy
+*.npz
+*.parquet
+*.safetensors
+*.pt
+*.pth
+*.bin
+
+# Generated paper/report outputs
+paper/*.pdf
+paper/*.html
+reports/

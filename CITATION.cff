@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use CIPHER, cite this repository and the upstream datasets and models used by your run."
+title: "CIPHER — Content-based Image Pathology: Histology Embedding Retrieval"
+type: software
+authors:
+  - family-names: "Al-Tal"
+    given-names: "Mohammed Khodor Firas"
+repository-code: "https://github.com/MohammedAlTal/CIPHER"
+license: MIT
+version: 0.1.0
+date-released: 2026-06-22

@@ -1,0 +1,12 @@
+version: 1
+name: uni
+adapter: uni
+model_id: MahmoodLab/UNI
+revision: b55a5ec6cade1a39edfe6534189a9b8ca7a022f0
+expected_dimension: 1024
+batch_size: 4
+dtype: float32
+preprocessing: model_native
+embedding_output: cls_token
+gated: true
+trust_remote_code: false

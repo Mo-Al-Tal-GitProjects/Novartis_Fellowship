@@ -1,0 +1,8 @@
+version: 1
+models: [clip, dino, plip, uni]
+metrics: [cosine, inner_product, euclidean, euclidean_l2]
+top_k: [1, 3, 5, 10, 20, 50]
+query_role: query
+gallery_role: gallery
+tie_breaker: gallery_image_id_ascending
+relevance: binary_curated

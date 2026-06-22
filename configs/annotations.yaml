@@ -1,0 +1,41 @@
+version: 1
+status: schema_only
+
+# These are new CIPHER annotations, never source-dataset labels.
+required_provenance_fields:
+  - annotator
+  - annotation_date
+  - evidence_source
+  - confidence
+  - adjudication_status
+
+evidence_sources:
+  - caption_explicit
+  - visual_review
+  - external_metadata
+
+confidence_values: [low, medium, high]
+adjudication_values: [unreviewed, reviewed, adjudicated]
+
+fields:
+  stain:
+    type: categorical_multilabel
+    allow_unknown: true
+  organ_or_tissue:
+    type: categorical_multilabel
+    allow_unknown: true
+  disease_or_process:
+    type: free_text_controlled_later
+    allow_unknown: true
+  morphology:
+    type: categorical_multilabel
+    allow_unknown: true
+  magnification:
+    type: numeric_or_range
+    allow_unknown: true
+  artifact:
+    type: categorical_multilabel
+    allow_unknown: true
+  panel_or_overlay:
+    type: categorical_multilabel
+    allow_unknown: true

@@ -1,0 +1,7 @@
+model_a,model_b,mean_ap_difference_a_minus_b,bootstrap_ci_low,bootstrap_ci_high,bootstrap_probability_a_greater_b,query_wins_a,query_wins_b
+CLIP,DINO,-0.0861993109,-0.171243,-0.020761,0.0000,0,11
+CLIP,PLIP,-0.0349706070,-0.068221,-0.005608,0.0048,2,9
+CLIP,UNI,-0.0884690428,-0.139409,-0.044284,0.0000,0,11
+DINO,PLIP,0.0512287039,-0.016738,0.143454,0.9054,6,5
+DINO,UNI,-0.0022697319,-0.060260,0.064599,0.4532,5,6
+PLIP,UNI,-0.0534984358,-0.110599,0.002137,0.0292,3,8

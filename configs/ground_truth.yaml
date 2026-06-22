@@ -1,0 +1,32 @@
+version: 1
+expected_positive_images: 49
+
+queries:
+  "387": 8a662f40-e8b5-47d3-9ce5-95c1823e3789
+  "464": 65cc23cf-5537-482c-9612-685c7ed74a94
+  "722": 63c3e07b-46b1-41f3-a738-b6c9829a38bb
+  "1024": 5b16a0e0-47a1-44f4-952b-2ba70e05ae82
+  "1353": 0ea10396-8f05-4475-ac6d-a8ebf06bc057
+  "2012": 31b38f1d-031a-4e3d-b06c-e463955c68d2
+  "2257": 67bc1b9d-5e45-410e-86ee-cd0348286e4a
+  "2823": 1dcc1962-0c66-4a84-88b6-f4cdbeab9886
+  "2871": 8a19985b-6d71-40b3-8b8c-3877a69db025
+  "3216": 3d393598-2410-43fc-8331-070e5e3cbf60
+  "3253": 0e0f91fd-787e-403a-bdd7-3782df9ba900
+
+deduplications:
+  - canonical: 1024_05.jpeg
+    excluded: [1024_05.jpg]
+    reason: Same visual content in alternate encodings; retain the taller source image.
+  - canonical: 2012_01.png
+    excluded: [2012_01.jpg]
+    reason: Same visual content in alternate encodings; retain the lossless, wider source image.
+
+retained_anomalies:
+  - files: [2012_02.jpg, 2012_02.png]
+    reason: The files share a rank label but contain visually distinct histopathology images.
+  - files: [3216_06.jpg]
+    reason: Retained as a curated positive because it is present in the supplied match folder.
+
+missing_rank_policy: use_observed_only
+unjudged_gallery_policy: operational_negative

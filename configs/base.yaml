@@ -1,0 +1,20 @@
+version: 1
+seed: 42
+
+paths:
+  data_root: data
+  archive: data/external/pubmed_set.zip
+  arch_root: data/raw/arch/pubmed_set
+  matches_root: data/raw/matches
+  manifests_root: data/manifests
+  artifacts_root: artifacts
+
+arch:
+  url: https://warwick.ac.uk/fac/cross_fac/tia/data/arch/pubmed_set.zip
+  expected_caption_records: 3309
+  download_workers: 8
+
+validation:
+  allowed_extensions: [.jpg, .jpeg, .png]
+  compute_perceptual_hash: true
+  fail_on_decode_error: true

@@ -1,0 +1,12 @@
+version: 1
+name: plip
+adapter: clip
+model_id: vinid/plip
+revision: 67ade53ddd32195868f422585f72698ef5d15094
+expected_dimension: 512
+batch_size: 16
+dtype: float32
+preprocessing: model_native
+embedding_output: image_projection
+gated: false
+trust_remote_code: false

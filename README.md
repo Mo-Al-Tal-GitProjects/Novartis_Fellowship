@@ -2,6 +2,8 @@
 
 **Content-based Image Pathology: Histology Embedding Retrieval**
 
+[![CI](https://github.com/MohammedAlTal/CIPHER/actions/workflows/ci.yml/badge.svg)](https://github.com/MohammedAlTal/CIPHER/actions/workflows/ci.yml)
+
 CIPHER is a standalone research codebase for evaluating whether embeddings from pre-trained vision and pathology models retrieve biologically relevant histopathology images. Its central concern is expert-relevant retrieval, not generic visual resemblance.
 
 The model comparison covers CLIP, DINO, PLIP, and UNI. The current implementation establishes the dataset and ground-truth layer, a shared model runtime, content-addressed embeddings, exact retrieval, and deterministic evaluation against curated judgments.

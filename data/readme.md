@@ -20,4 +20,4 @@ cipher data inspect
 cipher ground-truth validate
 ```
 
-ARCH and curated images are not licensed under the repository MIT License. See `THIRD_PARTY_LICENSES.md`.
+ARCH and curated images are not licensed under the repository MIT License. See `third_party_licenses.md`.

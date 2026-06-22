@@ -70,4 +70,4 @@ Grayscale reduced PLIP and UNI MAP by 0.0307 and 0.0266, while center-square cro
 increased DINO MAP by 0.0147. Every paired change interval crossed zero. These results
 indicate model-specific sensitivity but do not identify a causal stain, morphology,
 or field-of-view mechanism. Full interpretation is recorded in
-`paper/manuscript.md` and its tracked quantitative figures and result snapshots.
+`paper/unofficial_manuscript.md` and its tracked quantitative figures and result snapshots.

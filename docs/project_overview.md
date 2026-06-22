@@ -11,9 +11,9 @@ query-bootstrap uncertainty, model agreement, norm diagnostics, preprocessing
 ablations, figures, reports, and an unofficial manuscript. Every terminal command is
 available through `cipher`.
 
-This repository is an independent retrospective reconstruction. Historical context
-is documented in `BACKGROUND.md`; it is not an official institutional release or
-endorsed publication.
+This repository is an independent revisit of a past Fall 2024 AI in Pathology
+fellowship project. Historical context is documented in `background.md`; it is not
+an official institutional release or endorsed publication.
 
 ## Scientific position
 

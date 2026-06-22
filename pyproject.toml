@@ -5,11 +5,11 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "cipher"
 version = "0.1.0"
-description = "Histopathology embedding retrieval research pipeline"
-readme = "README.md"
+description = "A reproducible study of histopathology image embeddings for biological-match retrieval"
+readme = "readme.md"
 requires-python = ">=3.11"
 license = "MIT"
-license-files = ["LICENSE"]
+license-files = ["license"]
 authors = [
   {name = "Mohammed Khodor Firas Al-Tal"},
 ]

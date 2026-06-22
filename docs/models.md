@@ -46,4 +46,4 @@ Raw vectors are preserved because their norms may contain model-specific structu
 
 All four model adapters were validated against their intended immutable checkpoints for the 3,332 active query and gallery records. CIPHER verified row alignment for the model-native, grayscale, and center-square sets. These embeddings feed exact retrieval under four explicit metric contracts. The resulting 11-query measurements and ablations are descriptive and do not establish which model is generally best or which biological property drives retrieval.
 
-Model weights are downloaded from their upstream hosts and excluded from Git. CIPHER's MIT License does not apply to those weights; see [the third-party license summary](../THIRD_PARTY_LICENSES.md).
+Model weights are downloaded from their upstream hosts and excluded from Git. CIPHER's MIT License does not apply to those weights; see [the third-party license summary](../third_party_licenses.md).

@@ -214,9 +214,9 @@ invented or inferred automatically.
 
 
 def build_paper_bundle(context: ConfigContext, *, analysis_id: str) -> dict[str, Any]:
-    manuscript = context.root / "paper" / "manuscript.md"
+    manuscript = context.root / "paper" / "unofficial_manuscript.md"
     if not manuscript.is_file():
-        raise FileNotFoundError("paper/manuscript.md not found")
+        raise FileNotFoundError("paper/unofficial_manuscript.md not found")
     text = manuscript.read_text(encoding="utf-8")
     required_sections = [
         "# CIPHER",
@@ -236,7 +236,7 @@ def build_paper_bundle(context: ConfigContext, *, analysis_id: str) -> dict[str,
         raise ValueError("manuscript must retain the unofficial non-endorsement statement")
     output = context.root / "reports" / analysis_id / "paper"
     output.mkdir(parents=True, exist_ok=True)
-    rendered = output / "manuscript.md"
+    rendered = output / "unofficial_manuscript.md"
     shutil.copyfile(manuscript, rendered)
     manifest = {
         "analysis_id": analysis_id,
